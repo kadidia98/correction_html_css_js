@@ -77,7 +77,9 @@ submitBtn.addEventListener('click', (e)=> {
         let affichErreur = document.getElementById(saisie[i].id+'-erreur');
         if (saisie[i].value === "") {
             affichErreur.innerHTML = "<p>Ce champ est requis</p>"
-        } else {
+        }
+        // const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/; if (saisie[i].id === "email" && !regexEmail.test(saisie[i].value)) {   affichErreur.innerHTML = "<p>Veuillez saisir un email correct</p>" }
+        else {
             affichErreur.innerHTML = ""
         }
     }
